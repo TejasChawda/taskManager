@@ -3,6 +3,9 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
+        System.out.println("HELLO WELCOME TO TASK MANAGER");
+
         Operations operations = new Operations();
         Scanner sc = new Scanner(System.in);
 
