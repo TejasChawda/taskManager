@@ -16,7 +16,8 @@ public class Main {
             System.out.println("3. Show All Tasks");
             System.out.println("4. Update a task");
             System.out.println("5. Show tasks where time is over spent");
-            System.out.println("6. Exit");
+            System.out.println("6. Delete task");
+            System.out.println("7. Exit");
 
             int ch = sc.nextInt();
 
@@ -46,6 +47,11 @@ public class Main {
                     operations.getTasksOverSpent();
                     break;
                 case 6:
+                    System.out.println("Enter the task u want to delete");
+                    String tsk = sc.next();
+                    operations.deleteTask(tsk);
+                    break;
+                case 7:
                     System.out.println("OK");
                     sc.close();
                     return;

@@ -68,4 +68,17 @@ public class Operations {
             }
         }
     }
+
+    public void deleteTask(String taskName){
+        if(tasks.isEmpty()){
+            System.out.println("No tasks found to delete");
+            return;
+        }
+        boolean removed = tasks.removeIf(task ->
+                task.getTaskName().equalsIgnoreCase(taskName));
+
+        if(!removed){
+            System.out.println("No such task found!");
+        }
+    }
 }
